@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"> <!-- CSS faylingiz -->
+    <title>Product List with Detail & Reviews</title>
+</head>
+<body>
+    <nav class="filter">
+        <ul id="categoryNav"></ul>
+    </nav>
+
+    <div id="loading" class="loading"></div>
+
+    <div id="productsContainer"></div>
+
+    <button id="seeMoreBtn" onclick="loadMoreProducts()">See More</button>
+
+    
+    <div id="productDetailModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal()">&times;</span>
+            <div id="productDetail"></div>
+            <div id="reviewSection">
+                <h2>Reviews</h2>
+                <div id="reviewList"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script> 
+</body>
+</html>
